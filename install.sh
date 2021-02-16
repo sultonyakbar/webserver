@@ -20,6 +20,7 @@ tar -xvzf latest.tar.gz
 sudo mv wordpress /var/www/html/sultonyakbar.my.id
 sudo chown -R www-data:www-data /var/www/html/sultonyakbar.my.id/
 sudo chmod -R 755 /var/www/html/sultonyakbar.my.id/
+cp apps.conf /etc/apache2/sites-available/
 a2ensite apps.conf
 a2dissite 000-default.conf
 sudo a2enmod rewrite
